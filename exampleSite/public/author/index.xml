@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on Mind Crest Institute</title>
+    <link>https://www.mindcreststem.org/author/</link>
+    <description>Recent content in Authors on Mind Crest Institute</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright &amp;copy; 2026 [Mind Crest Institute.](https://www.mindcreststem.org/) All Rights Reserved</copyright>
+    <atom:link href="https://www.mindcreststem.org/author/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mind Crest Institute</title>
+      <link>https://www.mindcreststem.org/author/vlad-emil-petrea/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.mindcreststem.org/author/vlad-emil-petrea/</guid>
+      <description>Mind Crest Institute is a coaching centre in Chapra for Classes 11 and 12, covering Biology, Chemistry, Mathematics, and Physics.</description>
+    </item>
+  </channel>
+</rss>

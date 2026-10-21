@@ -1,0 +1,65 @@
+{{ $data := index site.Data site.Language.Lang }}
+
+{{ if $data.feature.feature.enable }}
+{{ with $data.feature.feature }}
+{{"<!-- feature -->" | safeHTML}}
+{{ $var := "" }}
+{{ if .hide_on_mobile }}
+{{ $var = "hideonmobile" }}
+{{ end }}
+<section class="section section-bg about-2 padding-2 {{ $var }}" id="feature">
+	<div class="container-fluid px-0 d-flex justify-content-center">
+		<div class="row mx-0 justify-content-center">
+			<div class="col-lg-10 text-center">
+				<div class="content-block" style="padding: 0 40px; margin: 0 auto;">
+					<!-- <h2>{{ .title | markdownify }}</h2>-->
+					Welcome <span aria-hidden="true" class="fa fa-lg fa-heart fa-anim-vertical-shake"
+						style="color:#FF0064"></span> </br>
+					<h3 style="text-align: justify;"></br>
+						<p>
+							Where you live can be the difference between fighting against the tide and finding your
+							natural flow.
+							</br></br>
+							If you are currently navigating a major life transition or searching for an environment that
+							finally supports your goals — whether in career advancement, spiritual growth, or love — I
+							help you find the location where you are meant to thrive.
+							</br></br>By combining <b>Transition Coaching</b> with precise <b>AstroCartography</b>, we
+							translate your unique astrological blueprint into a practical roadmap. Instead of
+							generalized advice, I provide personalized location guidance focused on your immediate
+							reality and long-term objectives.
+							</br></br>
+						<h4>Mind Crest Institute is here when you are ready for the next step. <b>
+								<a style="color:#FF9F1C;" href="#contact">Get in touch</a></b>.</h4>
+
+						<div class="row">
+							{{ range .feature_item }}
+							<div class="col-lg-6">
+								<div class="media">
+									{{with .icon}}
+									<div class="align-self-start mr-3">
+										<i class="{{ . }}"></i>
+									</div>
+									{{ end }}
+									<div class="media-body">
+										<h4 class="media-heading">{{ .title | markdownify }}</h4>
+										<p>{{ .content | markdownify }}</p>
+									</div>
+								</div>
+							</div>
+							{{ end }}
+						</div>
+				</div>
+			</div>
+			<div class="col-lg-6 vlad-image"
+				style="background-image: url('{{ .image_webp | absURL }}'); border-radius: 15px; margin: 20px; padding-bottom: 10px; background-repeat: no-repeat; overflow: hidden;">
+				<!-- this image is for trigger this section fallback background image -->
+				<img style="display: none;"
+					onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url({{ .image | absURL }})'"
+					src="{{ .image_webp | absURL }}" />
+			</div>
+		</div>
+	</div>
+</section>
+{{"<!-- /feature -->" | safeHTML}}
+{{ end }}
+{{ end }}

@@ -1,0 +1,12 @@
+name = "Mind Crest Institute"
+license = "CC BY 3.0"
+licenselink = "https://creativecommons.org/licenses/by/3.0/"
+description = "Website for Mind Crest Institute"
+homepage = "https://www.mindcreststem.org/"
+tags = ['landing-page', 'google-analytics', 'fast', 'modern', 'minimal', 'minimalistic', 'business', 'agency-template', 'themefisher', 'hugo-theme', 'hugo-templates', 'bootstrap', 'blog', 'responsive', 'portfolio', 'single-page', 'dark', 'clean', 'simple', 'company', 'creative', 'contact-form', 'custom-themes', 'mobile']
+features = ['bootstrap','responsive']
+min_version = "0.58.0"
+
+[author]
+  name = "Mind Crest Institute"
+  homepage = "https://www.mindcreststem.org/"
