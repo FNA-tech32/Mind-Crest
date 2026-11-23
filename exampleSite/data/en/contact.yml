@@ -1,0 +1,22 @@
+---
+contact:
+  enable: true
+  hide_on_mobile: false
+  title: Contact Us
+  subtitle: Mind Crest Institute
+  content: Call, visit the institute, or send a message. We will get back to you.
+  contact_list:
+  - icon: ti-location-pin
+    info: 'Civil Court Road, East From Municipality Chowk, Near Salempur Chowk, Chapra, Bihar 841301, India'
+  - icon: ti-mobile
+    info: 'Phone: +91 9934819234'
+  - icon: ti-mobile
+    info: 'Phone: +91 7033376951'
+  contact_form:
+    enable: true
+    form_action: POST
+    name: Your Name
+    email: Your Email
+    subject: Subject
+    message: Message
+    submit: Submit
